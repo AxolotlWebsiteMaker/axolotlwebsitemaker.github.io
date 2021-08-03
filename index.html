@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device=width, initial-scale=1">
+		<title>You should close some tabs </title>
+		<link rel="icon" href="">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ8W10XMW2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RJ8W10XMW2');
+</script>
+ </head> 
+ <body onload= "mobile()">
+ <style>
+  body {
+  background-image : url('Backgrounds/cityBackground.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.button {
+  background-color:powderblue; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid powderblue;
+}
+
+.button3:hover {
+  background-color: powderblue;
+  color: white;
+}
+ 
+</style>
+<script> 
+		function mobile(){
+			let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+			if (isMobile) {
+			document.body.style.backgroundImage = "url('Backgrounds/verticalBackground.jpeg')";
+				}
+			}
+		
+        function SecondPage() {
+           document.location.href = 'secondPage.html';
+			}
+		function Axolotl() {
+			document.location.href= 'axolotl.html';
+			}
+		function Backgrounds() {
+			document.location.href= 'backgrounds.html';
+			}
+		
+		
+	
+</script>
+
+<h1 style="background-color:powderblue;"> Axolotl jam sesh</h1>
+
+ <br>
+ <br>
+ <button class="button button3"onclick="SecondPage()">Click here for free books </button>
+ <button class="button button3"onclick="Axolotl()"> Visit Axolotl page</button>
+ <button class="button button3"onclick="Backgrounds()"> Click for free wallpapers</button>
+ 
+
+ <h4 style="background-color:powderblue;">Chanel - Frank Ocean x American Boy - Estelle </h4>
+ <br>
+ <audio controls >
+ <source src="Music/Shibuya.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+
+</audio>
+<br>
+<h4 style="background-color:powderblue;">Clint Eastwood - The Gorillaz x Redbone - Childish Gambino</h4>
+
+  <audio controls >
+  <source src="Music/Clint Eastwood_Redbone.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
+
+<h4 style="background-color:powderblue;">Just a perfectly normal Crab Rave </h4>
+
+<audio controls >
+  <source src="Music/PerfectlyNormalCrabRave.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
+<h4 style="background-color:powderblue;">I Can't Stop The Loneliness- Anri, Piano Version</h4>
+
+<audio controls >
+  <source src="Music/CantStopTheLoneliness.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<h4 style="background-color:powderblue;">Dumpster- Penelope Scott, Piano Version </h4>
+
+<audio controls >
+  <source src="Music/dumpster.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<br>
+<br>
+</body>
+
+<br>
+<br>
+</html>
