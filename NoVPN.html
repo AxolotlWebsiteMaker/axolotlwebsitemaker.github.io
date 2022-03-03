@@ -1,21 +1,41 @@
-<!DOCTYPE html><html lang="en"><head>
-    <script src="p5.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
-    <script src=
-    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<!DOCTYPE html>
+<html>
 
-          $.getJSON("https://api.ipify.org?format=json", function(data) {
-              // Setting text of element P with id gfg
-              $("#gfg").html(data.ip);
-          }) </script>
-  </head>
-  <body>
-    <script src="sketch.js">
-      </script>
-    <h3>Your IP Address:</h3>
-    <p id="gfg"></p>
-      
+<head>
+	<title>You should get a vpn</title>
+	<style>
+	p, h1 {
+		color: green;
+	}
+	</style>
+
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	
+	<script>
+	
+	/* Add "https://api.ipify.org?format=json" statement
+			this will communicate with the ipify servers in
+			order to retrieve the IP address $.getJSON will
+			load JSON-encoded data from the server using a
+			GET HTTP request */
+				
+	$.getJSON("https://api.ipify.org?format=json", function(data) {
+		
+		// Setting text of element P with id gfg
+		$("#gfg").html(data.ip);
+	})
+	</script>
+</head>
+
+<body>
+	<center>
+		<h3>Your public IP is:</h3>
+		<p id="gfg"></p>
+
+	</center>
 </body>
+
 </html>
+
